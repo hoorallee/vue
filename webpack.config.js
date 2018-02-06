@@ -18,7 +18,7 @@ module.exports = {
             { test: /\.css$/, use: ['style-loader', 'css-loader'] },
             { test: /\.less$/, use: [{ loader: 'style-loader' }, { loader: 'css-loader' }, { loader: 'less-loader' }] },
             { test: /\.scss$/, use: [{ loader: 'style-loader' }, { loader: 'css-loader' }, { loader: 'sass-loader' }] },
-            { test: /\.(png|jpg|gif)/, use: [{ loader: 'url-loader', options: { limit: 50000 } }] },
+            { test: /\.(png|jpg|gif|ttf|woff)/, use: [{ loader: 'url-loader', options: { limit: 50000 } }] },
             { test: /\.vue$/, loader: 'vue-loader' }
         ]
     },
